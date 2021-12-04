@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+pianobarEventData=`cat`
+
+osascript -e "
+if application \"PianobarNowPlayable\" is running then
+    tell application \"PianobarNowPlayable\"
+        launch handle pianobar event withEventName \"$1\" withEventData \"$pianobarEventData\"
+    end tell
+end if"

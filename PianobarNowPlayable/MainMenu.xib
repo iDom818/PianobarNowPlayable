@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Txs-69-SC7" id="YHZ-Gq-vwt"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Txs-69-SC7" customClass="AppDelegate" customModule="PianobarNowPlaying" customModuleProvider="target">
+            <connections>
+                <outlet property="launchAtLoginMenuItem" destination="PkD-Uc-Fnd" id="o4e-Jd-AMQ"/>
+                <outlet property="statusMenu" destination="zLR-lD-Q9h" id="vkr-gx-D4F"/>
+            </connections>
+        </customObject>
+        <menu id="zLR-lD-Q9h">
+            <items>
+                <menuItem title="Play/Pause" id="q1L-Gb-7aA">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onPlayPause:" target="Txs-69-SC7" id="JZu-jF-8ZR"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Next Song" id="d7N-uD-gmy">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onNextSong:" target="Txs-69-SC7" id="MR5-VX-PdS"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Love Song" id="3Ed-FY-tGP">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onLoveSong:" target="Txs-69-SC7" id="eNs-8D-mTS"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Ban Song" id="5cP-fs-huY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onBanSong:" target="Txs-69-SC7" id="g0X-NU-Rtr"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="oFy-XZ-eYU"/>
+                <menuItem title="Settings" id="Q8b-xf-9Eh">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Settings" id="2gK-WX-YrJ">
+                        <items>
+                            <menuItem title="Launch at login" id="PkD-Uc-Fnd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="onLaunchAtLogin:" target="Txs-69-SC7" id="ZJO-pv-h0h"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Swap Play/Pause State" id="dBO-U2-7im">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="onSwapPlayPauseState:" target="Txs-69-SC7" id="ou5-OY-haK"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="pfs-UA-P7q"/>
+                <menuItem title="Quit" id="dWe-Qn-cKo">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onQuit:" target="Txs-69-SC7" id="4D3-oW-Wxe"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="23" y="-20"/>
+        </menu>
+    </objects>
+</document>

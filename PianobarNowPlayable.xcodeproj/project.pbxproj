@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		595285592754955F00959767 /* PianobarNowPlayable.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 595285582754955F00959767 /* PianobarNowPlayable.sdef */; };
+		5952855B275497C300959767 /* HandlePianobarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5952855A275497C300959767 /* HandlePianobarEvent.swift */; };
+		597CC2CC2753E92C005A1332 /* NowPlayableMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CC2C82753E92C005A1332 /* NowPlayableMetadata.swift */; };
+		597CC2CD2753E92C005A1332 /* NowPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CC2C92753E92C005A1332 /* NowPlayable.swift */; };
+		597CC2CE2753E92C005A1332 /* NowPlayableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CC2CA2753E92C005A1332 /* NowPlayableError.swift */; };
+		597CC2CF2753E92C005A1332 /* NowPlayableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CC2CB2753E92C005A1332 /* NowPlayableCommand.swift */; };
+		597CC2DF2753EAF2005A1332 /* PianobarNowPlayableBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CC2DE2753EAF2005A1332 /* PianobarNowPlayableBehavior.swift */; };
+		59DEFB1C27531C5B00F699F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DEFB1B27531C5B00F699F6 /* AppDelegate.swift */; };
+		59DEFB2027531C5C00F699F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59DEFB1F27531C5C00F699F6 /* Assets.xcassets */; };
+		59DEFB2B27531C9100F699F6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59DEFB2A27531C9100F699F6 /* MainMenu.xib */; };
+		59DEFB2E27531DF300F699F6 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 59DEFB2D27531DF300F699F6 /* LaunchAtLogin */; };
+		EEDE861488A4F9C3C78FB36D /* 1-second-of-silence.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EEDE82F0FBFD96766F77151D /* 1-second-of-silence.m4a */; };
+		EEDE864B48563332F3EE242F /* PianobarPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDE875897E6A4D11BDD30D8 /* PianobarPlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5947E09327548C2C0005EACB /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		595285582754955F00959767 /* PianobarNowPlayable.sdef */ = {isa = PBXFileReference; lastKnownFileType = text; path = PianobarNowPlayable.sdef; sourceTree = "<group>"; };
+		5952855A275497C300959767 /* HandlePianobarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlePianobarEvent.swift; sourceTree = "<group>"; };
+		597CC2C027534735005A1332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		597CC2C82753E92C005A1332 /* NowPlayableMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayableMetadata.swift; sourceTree = "<group>"; };
+		597CC2C92753E92C005A1332 /* NowPlayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayable.swift; sourceTree = "<group>"; };
+		597CC2CA2753E92C005A1332 /* NowPlayableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayableError.swift; sourceTree = "<group>"; };
+		597CC2CB2753E92C005A1332 /* NowPlayableCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayableCommand.swift; sourceTree = "<group>"; };
+		597CC2DE2753EAF2005A1332 /* PianobarNowPlayableBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianobarNowPlayableBehavior.swift; sourceTree = "<group>"; };
+		59DEFB1827531C5B00F699F6 /* PianobarNowPlayable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianobarNowPlayable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59DEFB1B27531C5B00F699F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59DEFB1F27531C5C00F699F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59DEFB2427531C5C00F699F6 /* PianobarNowPlayable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PianobarNowPlayable.entitlements; sourceTree = "<group>"; };
+		59DEFB2A27531C9100F699F6 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		EEDE82F0FBFD96766F77151D /* 1-second-of-silence.m4a */ = {isa = PBXFileReference; lastKnownFileType = file.m4a; path = "1-second-of-silence.m4a"; sourceTree = "<group>"; };
+		EEDE875897E6A4D11BDD30D8 /* PianobarPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianobarPlayer.swift; sourceTree = "<group>"; };
+		EEDE8E30A186CE864D200DB5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EEDE8F282EC70D2E6C2044E5 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59DEFB1527531C5B00F699F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DEFB2E27531DF300F699F6 /* LaunchAtLogin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		597CC2C72753E92C005A1332 /* AppleNowPlayable */ = {
+			isa = PBXGroup;
+			children = (
+				5947E09327548C2C0005EACB /* LICENSE.txt */,
+				597CC2C82753E92C005A1332 /* NowPlayableMetadata.swift */,
+				597CC2C92753E92C005A1332 /* NowPlayable.swift */,
+				597CC2CA2753E92C005A1332 /* NowPlayableError.swift */,
+				597CC2CB2753E92C005A1332 /* NowPlayableCommand.swift */,
+			);
+			path = AppleNowPlayable;
+			sourceTree = "<group>";
+		};
+		597CC2DB2753E977005A1332 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEDE82F0FBFD96766F77151D /* 1-second-of-silence.m4a */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		59DEFB0F27531C5B00F699F6 = {
+			isa = PBXGroup;
+			children = (
+				59DEFB1A27531C5B00F699F6 /* PianobarNowPlayable */,
+				59DEFB1927531C5B00F699F6 /* Products */,
+				EEDE8E30A186CE864D200DB5 /* README.md */,
+				EEDE8F282EC70D2E6C2044E5 /* LICENSE.txt */,
+			);
+			sourceTree = "<group>";
+		};
+		59DEFB1927531C5B00F699F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59DEFB1827531C5B00F699F6 /* PianobarNowPlayable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DEFB1A27531C5B00F699F6 /* PianobarNowPlayable */ = {
+			isa = PBXGroup;
+			children = (
+				597CC2C72753E92C005A1332 /* AppleNowPlayable */,
+				597CC2DB2753E977005A1332 /* Resources */,
+				597CC2C027534735005A1332 /* Info.plist */,
+				59DEFB1B27531C5B00F699F6 /* AppDelegate.swift */,
+				59DEFB1F27531C5C00F699F6 /* Assets.xcassets */,
+				59DEFB2A27531C9100F699F6 /* MainMenu.xib */,
+				59DEFB2427531C5C00F699F6 /* PianobarNowPlayable.entitlements */,
+				EEDE875897E6A4D11BDD30D8 /* PianobarPlayer.swift */,
+				597CC2DE2753EAF2005A1332 /* PianobarNowPlayableBehavior.swift */,
+				595285582754955F00959767 /* PianobarNowPlayable.sdef */,
+				5952855A275497C300959767 /* HandlePianobarEvent.swift */,
+			);
+			path = PianobarNowPlayable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59DEFB1727531C5B00F699F6 /* PianobarNowPlayable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59DEFB2727531C5C00F699F6 /* Build configuration list for PBXNativeTarget "PianobarNowPlayable" */;
+			buildPhases = (
+				59DEFB1427531C5B00F699F6 /* Sources */,
+				59DEFB1527531C5B00F699F6 /* Frameworks */,
+				59DEFB1627531C5B00F699F6 /* Resources */,
+				597CC2BF27531EE1005A1332 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PianobarNowPlayable;
+			packageProductDependencies = (
+				59DEFB2D27531DF300F699F6 /* LaunchAtLogin */,
+			);
+			productName = PianobarNowPlaying;
+			productReference = 59DEFB1827531C5B00F699F6 /* PianobarNowPlayable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59DEFB1027531C5B00F699F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					59DEFB1727531C5B00F699F6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 59DEFB1327531C5B00F699F6 /* Build configuration list for PBXProject "PianobarNowPlayable" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59DEFB0F27531C5B00F699F6;
+			packageReferences = (
+				59DEFB2C27531DF300F699F6 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+			);
+			productRefGroup = 59DEFB1927531C5B00F699F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59DEFB1727531C5B00F699F6 /* PianobarNowPlayable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59DEFB1627531C5B00F699F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DEFB2B27531C9100F699F6 /* MainMenu.xib in Resources */,
+				595285592754955F00959767 /* PianobarNowPlayable.sdef in Resources */,
+				59DEFB2027531C5C00F699F6 /* Assets.xcassets in Resources */,
+				EEDE861488A4F9C3C78FB36D /* 1-second-of-silence.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		597CC2BF27531EE1005A1332 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59DEFB1427531C5B00F699F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597CC2CF2753E92C005A1332 /* NowPlayableCommand.swift in Sources */,
+				59DEFB1C27531C5B00F699F6 /* AppDelegate.swift in Sources */,
+				597CC2CE2753E92C005A1332 /* NowPlayableError.swift in Sources */,
+				597CC2DF2753EAF2005A1332 /* PianobarNowPlayableBehavior.swift in Sources */,
+				597CC2CD2753E92C005A1332 /* NowPlayable.swift in Sources */,
+				597CC2CC2753E92C005A1332 /* NowPlayableMetadata.swift in Sources */,
+				EEDE864B48563332F3EE242F /* PianobarPlayer.swift in Sources */,
+				5952855B275497C300959767 /* HandlePianobarEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		59DEFB2527531C5C00F699F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMainNibFile = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		59DEFB2627531C5C00F699F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMainNibFile = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		59DEFB2827531C5C00F699F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PianobarNowPlayable/PianobarNowPlayable.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3V93FBMSTW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PianobarNowPlayable/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominiclaudate.PianobarNowPlayable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		59DEFB2927531C5C00F699F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PianobarNowPlayable/PianobarNowPlayable.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3V93FBMSTW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PianobarNowPlayable/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominiclaudate.PianobarNowPlayable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59DEFB1327531C5B00F699F6 /* Build configuration list for PBXProject "PianobarNowPlayable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59DEFB2527531C5C00F699F6 /* Debug */,
+				59DEFB2627531C5C00F699F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59DEFB2727531C5C00F699F6 /* Build configuration list for PBXNativeTarget "PianobarNowPlayable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59DEFB2827531C5C00F699F6 /* Debug */,
+				59DEFB2927531C5C00F699F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59DEFB2C27531DF300F699F6 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59DEFB2D27531DF300F699F6 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59DEFB2C27531DF300F699F6 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 59DEFB1027531C5B00F699F6 /* Project object */;
+}

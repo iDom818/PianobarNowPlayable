@@ -1,0 +1,15 @@
+<dictionary xmlns:xi="http://www.w3.org/2003/XInclude">
+<suite name="PianobarNowPlayable Suite" code="PBNP" description="Commands to interact interact with PianobarNowPlayable.">
+
+    <command name="handle pianobar event" code="PBNPHPBE" description="Forward a pianobar event to PianobarNowPlayable">
+        <cocoa class="PianobarNowPlayable.HandlePianobarEvent"/>
+        <parameter name="withEventName" code="NAME" description="Name of the event" type="text">
+            <cocoa key="eventName"/>
+        </parameter>
+        <parameter name="withEventData" code="DATA" description="Data sent with the event" type="text">
+            <cocoa key="eventData"/>
+        </parameter>
+    </command>
+
+</suite>
+</dictionary>
