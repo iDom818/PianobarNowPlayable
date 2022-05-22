@@ -2,9 +2,12 @@
 
 pianobarEventData=`cat`
 
-osascript -e "
-if application \"PianobarNowPlayable\" is running then
-    tell application \"PianobarNowPlayable\"
-        launch handle pianobar event withEventName \"$1\" withEventData \"$pianobarEventData\"
-    end tell
-end if"
+osascript -- - "$1" "$pianobarEventData" <<'EOF'
+  on run argv
+    if application "PianobarNowPlayable" is running then
+      tell application "PianobarNowPlayable"
+        launch handle pianobar event withEventName item 1 of argv withEventData item 2 of argv
+      end tell
+    end if
+  end run
+EOF
