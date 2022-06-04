@@ -73,12 +73,16 @@ class PianobarPlayer {
     
     private func sendCommandToPianobar(_ pianobarCommand: PianobarCommand) {
         NSLog("Sending command to pianobar: \(pianobarCommand)")
-        let pianobarFifo = NSString(string: "~/.config/pianobar/ctl").expandingTildeInPath
-        let handler = FileHandle(forWritingAtPath: pianobarFifo)
-        if let dataToWrite = pianobarCommand.rawValue.data(using: .utf8) {
-            handler?.write(dataToWrite)
+        let sendCommandWorkItem = DispatchWorkItem {
+            let pianobarFifo = NSString(string: "~/.config/pianobar/ctl").expandingTildeInPath
+            let handler = FileHandle(forWritingAtPath: pianobarFifo)
+            if let dataToWrite = pianobarCommand.rawValue.data(using: .utf8) {
+                handler?.write(dataToWrite)
+            }
+            handler?.closeFile()
         }
-        handler?.closeFile()
+        DispatchQueue.global().async(execute: sendCommandWorkItem)
+        
     }
     
     private func setNowPlayingInformationToDefault() {
